@@ -2,7 +2,22 @@
 <style>
     body{
         font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
 
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2px;
+        border: 1px solid var(--border-color);
+        background: var(--footer-background);
+        color: var(--footer-font);
+        font-size: 14px;
     }
     button{
         border: none;
@@ -15,15 +30,66 @@
         align-items: center;
         flex-direction: column;
         justify-content: flex-start;
-        margin-top: 14rem;
+        margin-top: 8rem;
     }
     .search-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        height: 28px;
+        width: 582px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        border: 1px solid #ddd;
 
-        height: 40px;
-        width: 700px;
-        border-radius: 50%;
-        border-width: 30px;
-        border-color: black;
+    }
+    .searchbtns{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+
+    }
+    .lang{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    .sbutton{
+        min-width: 54px;
+        height: 34px;
+        padding: 0 15px;
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+
+    }
+    .sbutton:hover{
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+    }
+    .search-bar:hover{
+        box-shadow: 0 1px 6px 0 rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    .search{
+        height: 100%;
+        width: 100%;
+        border: transparent;
+        outline: none;
+        font-size: 16px;
+        font-weight: 300;
+
 
     }
 
@@ -70,20 +136,26 @@
           background-position: -131px -37px;
           opacity: 0.6;
     }
+    .img2{
+        background: url('//www.gstatic.com/inputtools/images/tia.png') no-repeat center;
+        height: 24px;
+        width: 24px;
+    }
     .img1{
         height: 30px;
         width: 30px;
         border: none;
         border-radius: 50%;
+        
     }
-    #google{
-        height: 77px;
-        width: 300px;
-
+    #link{
+        color:blue;
     }
 </style>
 <html>
-    <head></head>
+    <head>
+        <title>Google</title>
+    </head>
     <body>
         <nav class="nav">
             <a href="#" class="nav-btn">Gmail</a>
@@ -97,12 +169,23 @@
      
         </nav>
         <main>
-            <img class="google" src="icons/google-logo.png" alt="">
+            <img src="icons/google-logo.png" alt="">
             <div class="search-bar">
+                <img class= "search-icon" src="icons/google-search.png" alt="">
+                <input class="search">
+                <button class="img2">
+                </button>
 
             </div>
-            
+            <div class="searchbtns">
+                <button class="sbutton">Google Search</button>
+                <button class="sbutton">I'm feeling lucky</button>
+            </div>
+            <div class="lang">
+                <p>Google offered in <a class="nav-btn" id="link" href="#">English</a></p>
+            </div>
         </main>
+        <footer ></footer>
     </body>
     
 </html>
