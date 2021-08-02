@@ -14,9 +14,9 @@
         justify-content: space-between;
         width: 100%;
         padding: 2px;
-        border: 1px solid var(--border-color);
-        background: var(--footer-background);
-        color: var(--footer-font);
+        border: 1px solid #ddd;
+        background: #f2f2f2;
+        color: #70757a;
         font-size: 14px;
     }
     button{
@@ -151,6 +151,42 @@
     #link{
         color:blue;
     }
+    .footerbtn{
+        display: block;
+        padding: 10px 0px 10px 30px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 14px;
+    }
+    .footerbtn:hover{
+        text-decoration: underline;
+
+    }
+    .left, .right{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .right{
+         margin-right: 30px;
+    }
+    .location{
+        
+        position:absolute;
+        bottom:48.4px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2px;
+        border: 1px solid #ddd;
+        background: #f2f2f2;
+        color: #70757a;
+        font-size: 14px;
+
+    }
 </style>
 <html>
     <head>
@@ -185,7 +221,22 @@
                 <p>Google offered in <a class="nav-btn" id="link" href="#">English</a></p>
             </div>
         </main>
-        <footer ></footer>
+        <div class="location">
+            <a href="#" class="footerbtn">Saudi Arabia</a>
+        </div>
+        <footer >
+            <div class="left">
+            <a href="#" class="footerbtn">About</a>
+            <a href="#" class="footerbtn">Advertising</a>
+            <a href="#" class="footerbtn">Business</a>
+            <a href="#" class="footerbtn">How search works</a>
+            </div>
+            <div class="right">
+                <a href="#" class="footerbtn">Privacy</a>
+                <a href="#" class="footerbtn">Terms</a>
+                <a href="#" class="footerbtn">Settings</a>
+            </div>
+        </footer>
     </body>
     
 </html>
